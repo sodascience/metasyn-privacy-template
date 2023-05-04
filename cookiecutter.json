@@ -1,0 +1,9 @@
+{
+    "plugin_name": "Differential Privacy",
+    "user_name": "Raoul Schram",
+    "email": "r.d.schram@uu.nl",
+    "__plugin_slug": "metasynth-{{ cookiecutter.plugin_name|lower|replace(' ', '-') }}",
+    "__package_name": "{{ cookiecutter.plugin_name|lower|replace(' ', '_') }}",
+    "__plugin_camel": "{{ cookiecutter.plugin_name|replace(' ', '') }}",
+    "privacy": "{{ cookiecutter.__package_name }}" 
+}
