@@ -21,6 +21,11 @@ dependencies = [
 ]
 dynamic = ["version"]
 
+[project.optional-dependencies]
+test = [
+	"pytest", "pylint", "pydocstyle", "mypy", "flake8", "nbval",
+]
+
 [tool.setuptools]
 packages = ["metasynthcontrib"]
 
