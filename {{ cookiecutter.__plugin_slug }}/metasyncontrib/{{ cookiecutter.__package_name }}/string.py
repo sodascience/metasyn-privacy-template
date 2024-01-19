@@ -1,9 +1,9 @@
 """{{ cookiecutter.plugin_name }} classes for string variables."""
 
-from metasynth.distribution.faker import FakerDistribution
-from metasynth.distribution.regex import RegexDistribution, UniqueRegexDistribution
+from metasyn.distribution.faker import FakerDistribution
+from metasyn.distribution.regex import RegexDistribution, UniqueRegexDistribution
 
-from metasynthcontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
+from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
 
 
 # class {{ cookiecutter.__plugin_camel }}Faker(Base{{ cookiecutter.__plugin_camel }}, FakerDistribution):

@@ -7,16 +7,16 @@ name = "{{ cookiecutter.__plugin_slug }}"
 authors = [
     {name = "{{ cookiecutter.user_name }}", email = "{{ cookiecutter.email }}"},
 ]
-description = "Plugin package for MetaSynth with {{ cookiecutter.plugin_name }}."
+description = "Plugin package for metasyn with {{ cookiecutter.plugin_name }}."
 readme = "README.md"
 requires-python = ">=3.8"
-keywords = ["metasynth", "{{ cookiecutter.plugin_name }}"]
+keywords = ["metasyn", "{{ cookiecutter.plugin_name }}"]
 license = {text = "MIT"}
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-	"metasynth",
+	"metasyn",
 	"polars",
 ]
 dynamic = ["version"]
@@ -27,7 +27,7 @@ test = [
 ]
 
 [tool.setuptools]
-packages = ["metasynthcontrib"]
+packages = ["metasyncontrib"]
 
-[project.entry-points."metasynth.distribution_provider"]
-{{cookiecutter.__package_name }} = "metasynthcontrib.{{ cookiecutter.__package_name }}.provider:{{ cookiecutter.__plugin_camel }}Provider"
+[project.entry-points."metasyn.distribution_provider"]
+{{cookiecutter.__package_name }} = "metasyncontrib.{{ cookiecutter.__package_name }}.provider:{{ cookiecutter.__plugin_camel }}Provider"

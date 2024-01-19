@@ -5,11 +5,11 @@ import datetime as dt
 
 import polars as pl
 
-from metasynth.distribution.datetime import UniformDateTimeDistribution
-from metasynth.distribution.datetime import UniformTimeDistribution
-from metasynth.distribution.datetime import UniformDateDistribution
+from metasyn.distribution.datetime import UniformDateTimeDistribution
+from metasyn.distribution.datetime import UniformTimeDistribution
+from metasyn.distribution.datetime import UniformDateDistribution
 
-from metasynthcontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
+from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
 
 
 # class {{ cookiecutter.__plugin_camel }}UniformDateTime(Base{{ cookiecutter.__plugin_camel }}, UniformDateTimeDistribution):

@@ -2,11 +2,11 @@
 
 import polars as pl
 
-from metasynth.distribution.discrete import DiscreteUniformDistribution
-from metasynth.distribution.discrete import PoissonDistribution
-from metasynth.distribution.discrete import UniqueKeyDistribution
+from metasyn.distribution.discrete import DiscreteUniformDistribution
+from metasyn.distribution.discrete import PoissonDistribution
+from metasyn.distribution.discrete import UniqueKeyDistribution
 
-from metasynthcontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
+from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
 
 
 # class {{ cookiecutter.__plugin_camel }}UniqueKey(Base{{ cookiecutter.__plugin_camel }}, UniqueKeyDistribution):

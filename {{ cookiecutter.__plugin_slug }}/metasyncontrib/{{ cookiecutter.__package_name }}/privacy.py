@@ -1,6 +1,6 @@
 """{{ cookiecutter.plugin_name }} privacy class."""
 
-from metasynth.privacy import BasePrivacy
+from metasyn.privacy import BasePrivacy
 
 
 class {{ cookiecutter.__plugin_camel }}Privacy(BasePrivacy):

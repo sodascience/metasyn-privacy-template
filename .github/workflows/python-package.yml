@@ -27,9 +27,9 @@ jobs:
         python -m pip install cookiecutter
     - name: Try to install the template
       run: |
-        printf "\n\n\n\n" | cookiecutter https://github.com/sodascience/metasynth-plugin-template
+        printf "\n\n\n\n" | cookiecutter https://github.com/sodascience/metasyn-plugin-template
     - name: Check installation
       run: |
-        test -d metasynth-differential-privacy
-        cd metasynth-differential-privacy
+        test -d metasyn-differential-privacy
+        cd metasyn-differential-privacy
         pip install .

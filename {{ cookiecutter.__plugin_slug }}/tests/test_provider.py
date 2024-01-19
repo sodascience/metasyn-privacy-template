@@ -1,7 +1,7 @@
 from pytest import mark
 
-from metasynth.provider import get_distribution_provider
-from metasynth.testutils import check_distribution, check_distribution_provider
+from metasyn.provider import get_distribution_provider
+from metasyn.testutils import check_distribution, check_distribution_provider
 
 
 def test_{{ cookiecutter.__package_name }}_provider():

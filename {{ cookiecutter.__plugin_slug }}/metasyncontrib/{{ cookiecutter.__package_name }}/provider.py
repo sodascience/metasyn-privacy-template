@@ -1,8 +1,8 @@
 """Module contains distribution tree for {{ cookiecutter.plugin_name|lower }}."""
 
 from __future__ import annotations
-from metasynth.provider import BaseDistributionProvider
-from metasynth.distribution.base import BaseDistribution
+from metasyn.provider import BaseDistributionProvider
+from metasyn.distribution.base import BaseDistribution
 
 
 class {{ cookiecutter.__plugin_camel }}Provider(BaseDistributionProvider):

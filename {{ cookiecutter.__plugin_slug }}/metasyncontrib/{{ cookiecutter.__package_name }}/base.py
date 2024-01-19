@@ -1,6 +1,6 @@
 """Base class for all {{ cookiecutter.plugin_name|lower }} distributions."""
 
-from metasynth.distribution.base import BaseDistribution
+from metasyn.distribution.base import BaseDistribution
 
 
 class Base{{ cookiecutter.__plugin_camel }}(BaseDistribution):

@@ -2,12 +2,12 @@
 
 import polars as pl
 
-from metasynth.distribution.continuous import UniformDistribution
-from metasynth.distribution.continuous import NormalDistribution, LogNormalDistribution
-from metasynth.distribution.continuous import ExponentialDistribution
-from metasynth.distribution.continuous import TruncatedNormalDistribution
+from metasyn.distribution.continuous import UniformDistribution
+from metasyn.distribution.continuous import NormalDistribution, LogNormalDistribution
+from metasyn.distribution.continuous import ExponentialDistribution
+from metasyn.distribution.continuous import TruncatedNormalDistribution
 
-from metasynthcontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
+from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
 
 
 # class {{ cookiecutter.__plugin_camel }}Uniform(Base{{ cookiecutter.__plugin_camel }}, UniformDistribution):
