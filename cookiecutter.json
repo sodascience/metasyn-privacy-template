@@ -8,5 +8,5 @@
     "privacy": "{{ cookiecutter.__package_name }}",
     "prefix": "{{ cookiecutter.__plugin_camel }}",
     "__decorate": "@metadist_{{ cookiecutter.__package_name }}",
-    "__metadist_import": "from metasyncontrib.{{ cookiecutter.__package_name }}.base import {{ cookiecutter.__decorate }}"
+    "__metadist_import": "from metasyncontrib.{{ cookiecutter.__package_name }}.base import metadist_{{ cookiecutter.__package_name }}"
 }
