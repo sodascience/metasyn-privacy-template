@@ -7,10 +7,11 @@ from metasyn.distribution.continuous import NormalDistribution, LogNormalDistrib
 from metasyn.distribution.continuous import ExponentialDistribution
 from metasyn.distribution.continuous import TruncatedNormalDistribution
 
-from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
+{{ cookiecutter.__metadist_import }}
 
 
-# class {{ cookiecutter.__plugin_camel }}Uniform(Base{{ cookiecutter.__plugin_camel }}, UniformDistribution):
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}Uniform(UniformDistribution):
 #     """Uniform distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
 #     @classmethod
@@ -18,6 +19,7 @@ from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiec
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
+# {{ cookiecutter.__decorate }}
 # class {{ cookiecutter.__plugin_camel }}TruncatedNormal(Base{{ cookiecutter.__plugin_camel }}, TruncatedNormalDistribution):
 #     """TruncatedNormal distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
@@ -26,6 +28,7 @@ from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiec
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
+# {{ cookiecutter.__decorate }}
 # class {{ cookiecutter.__plugin_camel }}Normal(Base{{ cookiecutter.__plugin_camel }}, NormalDistribution):
 #     """Normal distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
@@ -34,6 +37,7 @@ from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiec
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
+# {{ cookiecutter.__decorate }}
 # class {{ cookiecutter.__plugin_camel }}LogNormal(Base{{ cookiecutter.__plugin_camel }}, LogNormalDistribution):
 #     """LogNormal distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
@@ -42,6 +46,7 @@ from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiec
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
+# {{ cookiecutter.__decorate }}
 # class {{ cookiecutter.__plugin_camel }}Exponential(Base{{ cookiecutter.__plugin_camel }}, ExponentialDistribution):
 #     """Exponential distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #

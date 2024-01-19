@@ -4,7 +4,7 @@ from metasyn.privacy import BasePrivacy
 
 
 class {{ cookiecutter.__plugin_camel }}Privacy(BasePrivacy):
-    """{{ cookiecutter.plugin_name }} privacy class that uses micro-aggregation.
+    """{{ cookiecutter.plugin_name }} privacy class.
     """
     name = "{{ cookiecutter.__package_name }}"
 

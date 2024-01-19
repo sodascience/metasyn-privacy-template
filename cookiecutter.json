@@ -5,5 +5,8 @@
     "__plugin_slug": "metasyn-{{ cookiecutter.plugin_name|lower|replace(' ', '-') }}",
     "__package_name": "{{ cookiecutter.plugin_name|lower|replace(' ', '_') }}",
     "__plugin_camel": "{{ cookiecutter.plugin_name|replace(' ', '') }}",
-    "privacy": "{{ cookiecutter.__package_name }}" 
+    "privacy": "{{ cookiecutter.__package_name }}",
+    "prefix": "{{ cookiecutter.__plugin_camel }}",
+    "__decorate": "@metadist_{{ cookiecutter.__package_name }}",
+    "__metadist_import": "from metasyncontrib.{{ cookiecutter.__package_name }}.base import {{ cookiecutter.__decorate }}"
 }
