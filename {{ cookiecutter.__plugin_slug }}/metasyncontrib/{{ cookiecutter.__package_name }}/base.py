@@ -1,9 +1,16 @@
 """Base class for all {{ cookiecutter.plugin_name|lower }} distributions."""
 
-from metasyn.distribution.base import BaseDistribution
 
+def metadist_{{ cookiecutter.__package_name }}():
+    """Decorate class to create a distribution with disclosure control.
 
-class Base{{ cookiecutter.__plugin_camel }}(BaseDistribution):
-    """{{cookiecutter.plugin_name}} class to set privacy and provenance of distributions."""
-    privacy = "{{ cookiecutter.privacy }}"
-    provenance = "{{ cookiecutter.__package_name }}"
+    Returns
+    -------
+    cls:
+        Class with the appropriate class variables.
+    """
+    def _wrap(cls):
+        cls.provenance = "{{ cookiecutter.__plugin_slug }}"
+        cls.privacy = "{{ cookiecutter.privacy }}"
+        return cls
+    return _wrap

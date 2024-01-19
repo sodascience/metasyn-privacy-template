@@ -1,12 +1,14 @@
 """{{ cookiecutter.plugin_name }} classes for string variables."""
 
-from metasyn.distribution.faker import FakerDistribution
+from metasyn.distribution.faker import FakerDistribution, UniqueFakerDistribution
+from metasyn.distribution.faker import FreeTextDistribution
 from metasyn.distribution.regex import RegexDistribution, UniqueRegexDistribution
 
-from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
+{{ cookiecutter.__metadist_import }}
 
 
-# class {{ cookiecutter.__plugin_camel }}Faker(Base{{ cookiecutter.__plugin_camel }}, FakerDistribution):
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}Faker(FakerDistribution):
 #     """Faker distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
 #     @classmethod
@@ -14,7 +16,26 @@ from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiec
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
-# class {{ cookiecutter.__plugin_camel }}Regex(Base{{ cookiecutter.__plugin_camel }}, RegexDistribution):
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}UniqueFaker(UniqueFakerDistribution):
+#     """Unique faker distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
+#
+#     @classmethod
+#     def _fit(cls, values: pl.Series, extra_argument=default_value):
+#         raise NotImplementedError("This distribution is not implemented yet.")
+
+
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}FreeText(FreeTextDistribution):
+#     """Free Text distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
+#
+#     @classmethod
+#     def _fit(cls, values: pl.Series, extra_argument=default_value):
+#         raise NotImplementedError("This distribution is not implemented yet.")
+
+
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}Regex(RegexDistribution):
 #     """Regex distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
 #     @classmethod
@@ -22,10 +43,10 @@ from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiec
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
-# class {{ cookiecutter.__plugin_camel }}UniqueRegex(Base{{ cookiecutter.__plugin_camel }}, UniqueRegexDistribution):
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}UniqueRegex(UniqueRegexDistribution):
 #     """UniqueRegex distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
 #     @classmethod
 #     def _fit(cls, values: pl.Series, extra_argument=default_value):
 #         raise NotImplementedError("This distribution is not implemented yet.")
-

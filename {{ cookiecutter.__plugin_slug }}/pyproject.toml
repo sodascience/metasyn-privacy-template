@@ -7,7 +7,7 @@ name = "{{ cookiecutter.__plugin_slug }}"
 authors = [
     {name = "{{ cookiecutter.user_name }}", email = "{{ cookiecutter.email }}"},
 ]
-description = "Plugin package for metasyn with {{ cookiecutter.plugin_name }}."
+description = "Plugin package for metasyn with {{ cookiecutter.plugin_name|lower }}."
 readme = "README.md"
 requires-python = ">=3.8"
 keywords = ["metasyn", "{{ cookiecutter.plugin_name }}"]
@@ -30,4 +30,7 @@ test = [
 packages = ["metasyncontrib"]
 
 [project.entry-points."metasyn.distribution_provider"]
-{{cookiecutter.__package_name }} = "metasyncontrib.{{ cookiecutter.__package_name }}.provider:{{ cookiecutter.__plugin_camel }}Provider"
+{{ cookiecutter.__package_name }} = "metasyncontrib.{{ cookiecutter.__package_name }}.provider:{{ cookiecutter.__plugin_camel }}Provider"
+
+[project.entry-points."metasyn.privacy"]
+{{ cookiecutter.__package_name }} = "metasyncontrib.{{ cookiecutter.__package_name }}.privacy:{{ cookiecutter.__plugin_camel }}"

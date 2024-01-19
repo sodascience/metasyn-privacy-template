@@ -1,4 +1,4 @@
-"""Module contains distribution tree for {{ cookiecutter.plugin_name|lower }}."""
+"""Module contains distribution provider for {{ cookiecutter.plugin_name|lower }}."""
 
 from __future__ import annotations
 from metasyn.provider import BaseDistributionProvider
@@ -6,7 +6,7 @@ from metasyn.distribution.base import BaseDistribution
 
 
 class {{ cookiecutter.__plugin_camel }}Provider(BaseDistributionProvider):
-    """Distribution tree that contains safe distributions using {{ cookiecutter.plugin_name|lower }}.
+    """Distribution provider that contains safe distributions using {{ cookiecutter.plugin_name|lower }}.
     """
 
     @property

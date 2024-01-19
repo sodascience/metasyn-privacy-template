@@ -3,10 +3,11 @@
 import polars as pl
 
 from metasyn.distribution.categorical import MultinoulliDistribution
-from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
 
+{{ cookiecutter.__metadist_import }}
 
-# class {{ cookiecutter.__plugin_camel }}Multinoulli(Base{{ cookiecutter.__plugin_camel }}, MultinoulliDistribution):
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}Multinoulli(MultinoulliDistribution):
 #     """{{cookiecutter.plugin_name}} implementation for multinoulli distribution.
 #     """
 #

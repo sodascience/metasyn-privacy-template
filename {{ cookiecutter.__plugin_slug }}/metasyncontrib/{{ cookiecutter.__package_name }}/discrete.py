@@ -5,11 +5,14 @@ import polars as pl
 from metasyn.distribution.discrete import DiscreteUniformDistribution
 from metasyn.distribution.discrete import PoissonDistribution
 from metasyn.distribution.discrete import UniqueKeyDistribution
+from metasyn.distribution.discrete import DiscreteTruncatedNormalDistribution
+from metasyn.distribution.discrete import DiscreteNormalDistribution
 
-from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiecutter.__plugin_camel }}
+{{ cookiecutter.__metadist_import }}
 
 
-# class {{ cookiecutter.__plugin_camel }}UniqueKey(Base{{ cookiecutter.__plugin_camel }}, UniqueKeyDistribution):
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}UniqueKey(UniqueKeyDistribution):
 #     """UniqueKey distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
 #     @classmethod
@@ -17,7 +20,8 @@ from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiec
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
-# class {{ cookiecutter.__plugin_camel }}DiscreteUniform(Base{{ cookiecutter.__plugin_camel }}, DiscreteUniformDistribution):
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}DiscreteUniform(DiscreteUniformDistribution):
 #     """DiscreteUniform distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
 #     @classmethod
@@ -25,9 +29,28 @@ from metasyncontrib.{{ cookiecutter.__package_name }}.base import Base{{ cookiec
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
-# class {{ cookiecutter.__plugin_camel }}Poisson(Base{{ cookiecutter.__plugin_camel }}, PoissonDistribution):
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}Poisson(PoissonDistribution):
 #     """Poisson distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
 #
 #     @classmethod
 #     def _fit(cls, values: pl.Series, extra_argument=default_value):
 #         raise NotImplementedError("This distribution is not implemented yet.")
+
+
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}DiscreteTruncatedNormal(DiscreteTruncatedNormalDistribution):
+#     """Discrete truncated normal distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
+#
+#     @classmethod
+#     def _fit(cls, values: pl.Series, extra_argument=default_value):
+#         raise NotImplementedError("This distribution is not implemented yet.")
+
+# {{ cookiecutter.__decorate }}
+# class {{ cookiecutter.prefix }}DiscreteNormal(DiscreteNormalDistribution):
+#     """Discrete normal distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
+#
+#     @classmethod
+#     def _fit(cls, values: pl.Series, extra_argument=default_value):
+#         raise NotImplementedError("This distribution is not implemented yet.")
+
