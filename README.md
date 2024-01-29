@@ -3,7 +3,7 @@
 Template for creating privacy plugins for the metasyn library. If you want to create new distributions instead, use the [metasyn-distribution](https://github.com/sodascience/metasyn-distribution-template) template. Follow these steps to create a new plugin from this template:
 
 - Install cookiecutter: `pip install cookiecutter` on the command line.
-- Use the template: `cookiecutter https://github.com/sodascience/metasyn-plugin-template`
+- Use the template: `cookiecutter https://github.com/sodascience/metasyn-privacy-template`
 
 The template is now ready to use. To finish your plugin, edit the following modules:
 
